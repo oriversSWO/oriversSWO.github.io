@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título aleatorio</title>
+  <style>
+    .titulo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .descripcion {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="titulo">{{título_aleatorio()}}</h1>
+  <p class="descripcion">{{descripción_aleatoria()}}</p>
+  <script>
+    // Función para generar un título aleatorio
+    function título_aleatorio() {
+      const titulos = ['Título 1', 'Título 2', 'Título 3', 'Título 4', 'Título 5'];
+      return titulos[Math.floor(Math.random() * titulos.length)];
+    }
+
+    // Función para generar una descripción aleatoria
+    function descripción_aleatoria() {
+      const descripciones = ['Descripción 1', 'Descripción 2', 'Descripción 3', 'Descripción 4', 'Descripción 5'];
+      return descripciones[Math.floor(Math.random() * descripciones.length)];
+    }
+  </script>
+</body>
+</html>
